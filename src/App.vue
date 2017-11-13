@@ -1,28 +1,16 @@
 <template>
-  <div id="app">
-    <img src="./assets/logo.png">
-    <HelloWorld/>
-  </div>
+<div id="app">
+  <h3>Bike(whe)re<br><small>Can you get there?</small></h3>
+  <Station/>
+</div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
-
-export default {
-  name: 'app',
-  components: {
-    HelloWorld
-  }
-}
+    import Station from "/components/Station.vue"
+    export default {
+      name: 'app',
+      components: {
+        Station
+      }
+    }
 </script>
-
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
