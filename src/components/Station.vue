@@ -50,7 +50,7 @@
             }
         },
         created () {
-            fetchStationNames()
+            this.fetchStationNames()
         },
         components: {
             Data
