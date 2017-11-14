@@ -6,7 +6,7 @@
 </template>
 
 <script>
-    import Station from "/components/Station.vue"
+    import Station from "./components/Station.vue"
     export default {
       name: 'app',
       components: {
