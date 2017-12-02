@@ -5,7 +5,7 @@
                 {{station["address"]}}
             </option>
         </select>
-        <div class="col-lg-offset-1">
+        <div class="col-lg-offset-2">
             <div class="panel" v-bind="selectedStation">
               <h4 class="panel-title">{{selectedStation["address"]}}</h4>
               <div>
