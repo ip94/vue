@@ -1,5 +1,5 @@
 <template>
-    <div class="form-inline col-lg-4">
+    <div>
         <select class="input-lg col-lg-offset-1" v-model="selectedStation" @change="getDetail(selectedStation)">
             <option v-for="station in stationArray" v-bind:value="station">
                 {{station["address"]}}
