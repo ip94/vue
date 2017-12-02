@@ -5,15 +5,10 @@
                 {{station["address"]}}
             </option>
         </select>
-        <div class="col-lg-offset-2">
-            <div class="panel" v-bind="selectedStation">
-              <h4 class="panel-title">{{selectedStation["address"]}}</h4>
-              <div>
-                  <h4 class="panel-info"><strong>Bikes: </strong>{{bikes}}</h4>
-                  <h4 class="panel-info"><strong>Docks: </strong>{{docks}}</h4>
-              </div>
-            </div>
-        </div> 
+        <div class="col-lg-offset-1" style="margin-top: 20px">
+            <h4 class="panel-info"><strong>Bikes: </strong>{{bikes}}</h4>
+            <h4 class="panel-info"><strong>Docks: </strong>{{docks}}</h4>
+        </div>
     </div>
 </template>
 
