@@ -1,8 +1,7 @@
 body {font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased;}
 .nav {font-size: 20px;}
 td {padding-left: 30px}
-.code ::before {content:CLI;}
-.code {display: black; background-color: black; color: #42b983}
+.code {display: block; background-color: black; color: #42b983}
 .card {margin-top: 40px}
 .card-text {padding-left: 20px}
 .jumbotron, footer {background-color: #42b983; color: white}
