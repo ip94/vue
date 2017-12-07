@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Basic Vue.js How To</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <h1 class="text-center">How-to with Vue.js</h1>
+        <h3>Now that you are ready to learn...</h3>
+    </div>
+</div>
+<div class="container">
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Model-View-Controller</h2>
+                <img class="" src="./MVC.JPG">
+                <p class="card-text">
+                    A model “manages data, logic, rules” of the application; view is the component that determines the interface; and controller is the element that reacts to changes in user input (Wikipedia). A user sees the view and interacts with controller. Upon a change has been made, the controller receives the changed data, manipulates the model, which then updates the view for the user to see.
+                </p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Structure of Project</h2>
+                <div class="card-text">
+                    <h6>index.html</h6>
+                    <p>Contains skeleton of the html document and links to App and scripts from build.js within the dist folder</p>
+                    <h6>index.css (optional)</h6>
+                    <h6>dist foler</h6>
+                    <p>Is compiled each time updates in the projects need to be run on the web server. It renders all components into one file, build.js</p>
+                    <ul>
+                        <li>main.js (creates a Vue instance, App)</li>
+                        <li>App.vue (is the root parent of all components)</li>
+                        <li>Component1.vue</li>
+                        <li>Component2.vue</li>
+                        <li>...</li>
+                    </ul>       
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Directives</h2>
+                <div class="card-text">
+                    <table>
+                        <tr>
+                            <th>v-model</th>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <th>v-bind (shorthand = : )</th>
+                            <td>reactively update HTML</td>
+                        </tr>
+                        <tr>
+                            <th>v-for</th>
+                            <td>using a for loop to insert html elements. Has a higher priority if combined with v-if.</td>
+                        </tr>
+                        <tr>
+                            <th>v-on (shorthand = @)</th>
+                            <td>listens to DOM events</td>
+                        </tr>
+                        <tr>
+                            <th>v-if</th>
+                            <td>attributes that can control insertion or removal of element</td>
+                        </tr>
+                        <tr>
+                            <th>{{variable}}</th>
+                            <td>substitutes value of variable in html template</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">My Project Ideas</h2>
+                <div class="card-text">
+                    <p>Using an available API, the Bikeshare API in this case, I wanted to create an interactive one-page application that demonstrates the implementation of basic Vue.js directives and libraries.</p>
+                    <h4>1. Design the basic page-view and objective</h4>
+                    <table>
+                        <tr>
+                            <th colspan="2"><strong> TITLE</strong></th>
+                        </tr>
+                        <tr>
+                            <td>Left half: information about station where you retrieve your bike</td>
+                            <td>Right half: information about station where you’ll park</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2">What can I do with these information?</td>
+                        </tr>
+                    </table>
+                    <h4>2. Figure out what information is available and what information I need</h4>
+                    <p>From the Bikeshare API, I found that there are two databases that are useful for me – one that lists out all the bike stations in Toronto with information such as location, payment method, types of station; the other one lists out the bike and dock information for each station. </p>
+                    <h4>3. Design project structures</h4>
+                    
+                    <h4></h4>
+                </div>
+            </div>
+        </div>
+</div>
+</body>
+</html>
