@@ -70,7 +70,7 @@
                     <table>
                         <tr>
                             <th>v-model</th>
-                            <td></td>
+                            <td>binds to value from user input or component output</td>
                         </tr>
                         <tr>
                             <th>v-bind (shorthand = : )</th>
@@ -96,12 +96,35 @@
                 </div>
             </div>
         </div>
+
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Common Hooks</h2>
+                <div class="card-text">
+                    <table>
+                        <tr>
+                            <th>created ()</th>
+                            <td>Runs when the page is first accessed</td>
+                        </tr>
+                        <tr>
+                            <th>mounted ()</th>
+                            <td>Runs when instance is rendered</td>
+                        </tr>
+                        <tr>
+                            <th>updated ()</th>
+                            <td>Called when data change caused DOM to re-render and patch</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
         <div class="card">
             <div class="card-body">
                 <h2 class="card-title">My Project Ideas</h2>
                 <div class="card-text">
                     <p>Using an available API, the Bikeshare API in this case, I wanted to create an interactive one-page application that demonstrates the implementation of basic Vue.js directives and libraries.</p>
-                    <h4>1. Design the basic page-view and objective</h4>
+                    <h3>1. Design the basic page-view and objective</h3>
                     <div class="container">
                         <table class="col-lg-6 col-lg-offset-3">
                             <tr>
@@ -116,9 +139,9 @@
                             </tr>
                         </table>
                     </div>
-                    <h4>2. Figure out what information is available and what information I need</h4>
+                    <h3>2. Figure out what information is available and what information I need</h3>
                     <p>From the Bikeshare API, I found that there are two databases that are useful for me – one that lists out all the bike stations in Toronto with information such as location, payment method, types of station; the other one lists out the bike and dock information for each station. </p>
-                    <h4>3. Design project structures</h4>
+                    <h3>3. Design project structures</h3>
                     <p>Project structures are decided upon hierarchy of parents and children components. These require time to think through how the data changes are going to manipulate the model. Where does the large-scale data get split up and used in components? How are the data retrieved and how will it be communicated? Where will it be used? Are there any repetitions?</p>
                     <div class="container">
                         <div class="col-lg-6">
@@ -130,10 +153,11 @@
                             <img src="./media/newDesign.JPG">
                         </div>
                     </div>
-                    <h4>4. Start coding it up!</h4>
+                    <h3>4. Start coding it up!</h3>
                 </div>
             </div>
         </div>
 </div>
+<footer>&nbsp;</footer>
 </body>
 </html>
