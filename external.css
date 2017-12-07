@@ -1,5 +1,5 @@
 body {font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased;}
-nav {}
+nav {opacity: 0.2; font-size: 18px; color: white}
 td {padding-left: 30px}
 .card {margin-top: 40px}
 .card-text {padding-left: 20px}
