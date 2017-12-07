@@ -12,6 +12,26 @@
     <div class="jumbotron text-center">
         <h1>How-to with Vue.js</h1>
         <h3>Now that you are ready to learn...</h3>
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a class="nav-link" href="/intro.html">Introduction</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="install2.html">Installation</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">Tutorial</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/">Bike(whe)re</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/conclusion5.html">Conclusion</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="reference6.html">References</a>
+          </li>
+        </ul>
     </div>
 </div>
 <div class="container">
@@ -54,7 +74,7 @@
                         </tr>
                         <tr>
                             <th>v-bind (shorthand = : )</th>
-                            <td>reactively update HTML</td>
+                            <td>reactively updates HTML</td>
                         </tr>
                         <tr>
                             <th>v-for</th>
@@ -82,23 +102,35 @@
                 <div class="card-text">
                     <p>Using an available API, the Bikeshare API in this case, I wanted to create an interactive one-page application that demonstrates the implementation of basic Vue.js directives and libraries.</p>
                     <h4>1. Design the basic page-view and objective</h4>
-                    <table>
-                        <tr>
-                            <th colspan="2"><strong> TITLE</strong></th>
-                        </tr>
-                        <tr>
-                            <td>Left half: information about station where you retrieve your bike</td>
-                            <td>Right half: information about station where you’ll park</td>
-                        </tr>
-                        <tr>
-                            <td colspan="2">What can I do with these information?</td>
-                        </tr>
-                    </table>
+                    <div class="container">
+                        <table class="col-lg-6 col-lg-offset-3">
+                            <tr>
+                                <th colspan="2"><strong> TITLE</strong></th>
+                            </tr>
+                            <tr>
+                                <td>Left half: information about station where you retrieve your bike</td>
+                                <td>Right half: information about station where you’ll park</td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">What can I do with these information?</td>
+                            </tr>
+                        </table>
+                    </div>
                     <h4>2. Figure out what information is available and what information I need</h4>
                     <p>From the Bikeshare API, I found that there are two databases that are useful for me – one that lists out all the bike stations in Toronto with information such as location, payment method, types of station; the other one lists out the bike and dock information for each station. </p>
                     <h4>3. Design project structures</h4>
-
-                    <h4></h4>
+                    <p>Project structures are decided upon hierarchy of parents and children components. These require time to think through how the data changes are going to manipulate the model. Where does the large-scale data get split up and used in components? How are the data retrieved and how will it be communicated? Where will it be used? Are there any repetitions?</p>
+                    <div class="container">
+                        <div class="col-lg-6">
+                            <h5>Before</h5>
+                            <img src="./originalDesign.JPG">
+                        </div>
+                        <div class="col-lg-6">
+                            <h5>After</h5>
+                            <img src="./newDesign.JPG">
+                        </div>
+                    </div>
+                    <h4>4. Start coding it up!</h4>
                 </div>
             </div>
         </div>

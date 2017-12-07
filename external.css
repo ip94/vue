@@ -1,2 +1,10 @@
-table {text-align: center;}
+body {font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased;}
+table {font-size: 0.87em;}
+td {padding-left: 30px}
+.card {margin-top: 40px}
 .card-text {padding-left: 20px}
+.jumbotron, footer {background-color: #42b983; color: white}
+p {font-size: 18px; display: block; margin-top: 1em; margin-bottom: 1em}
+h1
+h2
+h4 {font-weight: bold}
