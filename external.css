@@ -1,6 +1,7 @@
 body {font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased;}
-nav {opacity: 0.2; font-size: 18px; color: white}
+.nav {opacity: 0.2; font-size: 18px; color: white}
 td {padding-left: 30px}
+.code ::before {content:CLI;}
 .card {margin-top: 40px}
 .card-text {padding-left: 20px}
 .jumbotron, footer {background-color: #42b983; color: white}

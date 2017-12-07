@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vue.js Install</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./external.css">
+</head>
+<body>
+<div class="container">
+    <h1 class="jumbotron text-center">Installation of Vue.js</h1>
+    <ul class="nav nav-tabs">
+      <li class="nav-item nav-fill">
+        <a class="nav-link" href="/intro.html">Introduction</a>
+      </li>
+      <li class="nav-item nav-fill">
+        <a class="nav-link active" href="#">Installation</a>
+      </li>
+      <li class="nav-item nav-fill">
+        <a class="nav-link" href="/howto3.html">Tutorial</a>
+      </li>
+      <li class="nav-item nav-fill">
+        <a class="nav-link" href="/">Bike(whe)re</a>
+      </li>
+      <li class="nav-item nav-fill">
+        <a class="nav-link" href="/conclusion5.html">Conclusion</a>
+      </li>
+      <li class="nav-item nav-fill">
+        <a class="nav-link" href="reference6.html">References</a>
+      </li>
+    </ul>
+</div>
+<div class="container">
+    <p>Installing Vue.js is as simple as it sounds. However, there are a few ways to create a project once your server is ready. The method below is how I installed Vue on my Ubuntu server.</p>
+    <div>
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Step 1: NPM</h2>
+                <div class="card-text">
+                    <table>
+                        <tr>
+                            <td class="code">
+                                $npm install vue
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Step 2: CLI</h2>
+                <div class="card-text">
+                    <p>Great for building single-page application on the run. Vue.org recommends prior knowledge in Node.js or active learning in their guide if using CLI.</p>
+                    <table>
+                        <caption>Referenced from Vue.org</caption>
+                        <tr>
+                            <td class="code">
+                                <pre>
+                                $ npm install --global vue-cli
+                                # create a new project using the "webpack" template
+                                $ vue init webpack my-project
+                                # install dependencies and go!
+                                $ cd my-project
+                                $ npm install
+                                $ npm run dev
+                                </pre>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
