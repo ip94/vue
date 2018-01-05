@@ -57,7 +57,7 @@
                 let location = {"lat": lat, "lng": lon};
                 let map = new google.maps.Map(document.getElementById('map'), {
                   zoom: 4,
-                  center: uluru
+                  center: location
                 });
                 let marker = new google.maps.Marker({
                   position: location,
