@@ -4,26 +4,26 @@
         <h1>Bike(whe)re<br><small>Can you get there?</small></h1>
         <h3>An app to help you navigate through the Toronto Bikeshare system where you need it, when you need it.</h3>
     </div>
-    <ul class="nav nav-tabs">
-      <li class="nav-item nav-fill">
+    <b-nav>
+      <b-nav-item class="nav-item nav-fill">
         <a class="nav-link" href="/intro.html">Introduction</a>
-      </li>
-      <li class="nav-item nav-fill">
+      </b-nav-item>
+      <b-nav-item>
         <a class="nav-link" href="/install2.html">Installation</a>
-      </li>
-      <li class="nav-item nav-fill">
+      </b-nav-item>
+      <b-nav-item>
         <a class="nav-link" href="/howto3.html">Tutorial</a>
-      </li>
-      <li class="nav-item nav-fill">
+      </b-nav-item>
+      <b-nav-item active>
         <a class="nav-link active" href="#">Bike(whe)re</a>
-      </li>
-      <li class="nav-item nav-fill">
+      </b-nav-item>
+      <b-nav-item>
         <a class="nav-link" href="/conclusion5.html">Conclusion</a>
-      </li>
-      <li class="nav-item nav-fill">
+      </b-nav-item>
+      <b-nav-item>
         <a class="nav-link" href="/reference6.html">References</a>
-      </li>
-    </ul>
+      </b-nav-item>
+    </b-nav>
     <Station v-on:update="updateMessage"/>
     <div class="container center-block panel">
         <div class="text-left text-info col-lg-12 panel-heading">
