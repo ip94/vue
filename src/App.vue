@@ -51,16 +51,15 @@
       },
       methods: {
         updateMessage: function (bikes, docks) {
-            if (bikes == 0 || docks == 0) {
-                this.message = "Maybe choose from a nearby station..."
-            } else if (bikes == 1) {
-                this.message = "Not many bikes left. Gotta hurry up!"
-            } else if (docks == 1) {
-                this.message = "Hurry and get your butt there!"
-            } else {
-                this.message = "Let's get going!"
-            }
-
+          if (bikes == 0 || docks == 0) {
+              this.message = "Maybe choose from a nearby station..."
+          } else if (bikes == 1) {
+              this.message = "Not many bikes left. Gotta hurry up!"
+          } else if (docks == 1) {
+              this.message = "Hurry and get your butt there!"
+          } else {
+              this.message = "Let's get going!"
+          }
         },
       }
     }

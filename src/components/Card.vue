@@ -1,6 +1,6 @@
 <template>
     <div>
-        <select class="input-lg col-lg-offset-1" v-model="selectedStation" @change="getDetail(selectedStation)">
+        <select class="input-lg col-lg-offset-1" v-model="selectedStation" @change="getDetail(selectedStation), initMap(selectedStation)">
             <option v-for="station in stationArray" v-bind:value="station">
                 {{station["address"]}}
             </option>
@@ -8,10 +8,15 @@
         <div class="col-lg-offset-1" style="margin-top: 20px">
             <h4 class="panel-info"><strong>Bikes: </strong>{{bikes}}</h4>
             <h4 class="panel-info"><strong>Docks: </strong>{{docks}}</h4>
+            <div id=map>
+
+            </div>
         </div>
     </div>
 </template>
-
+<script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUud00HNKREyWQuSQIA4DmyErrfd9DAzY&callback=initMap">
+</script>
 <script>
     export default {
         props:["stationArray"],
@@ -22,6 +27,8 @@
                 bikes: 0,
                 docks: 0,
                 selectedStation: "",
+                lat: 0,
+                lon: 0,
             }
         },
         watch: {
@@ -44,6 +51,19 @@
                 this.bikes = stn["num_bikes_available"]
                 this.docks = stn["num_docks_available"]
             },
+            initMap(station) {
+                let lat = station["lat"];
+                let lon = station["lon"];
+                let location = {"lat": lat, "lng": lon};
+                let map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 4,
+                  center: uluru
+                });
+                let marker = new google.maps.Marker({
+                  position: location,
+                  map: map
+                });
+            }
         },
         created () {
             this.fetchStatus()
