@@ -1,6 +1,6 @@
 <template>
     <div>
-        <select class="input-lg col-lg-offset-1" v-model="selectedStation" @change="getDetail(selectedStation), initMap(selectedStation)">
+        <select class="input-lg col-lg-offset-1" v-model="selectedStation" @change="getDetail(selectedStation)">
             <option v-for="station in stationArray" v-bind:value="station">
                 {{station["address"]}}
             </option>
@@ -8,13 +8,12 @@
         <div class="col-lg-offset-1" style="margin-top: 20px">
             <h4 class="panel-info"><strong>Bikes: </strong>{{bikes}}</h4>
             <h4 class="panel-info"><strong>Docks: </strong>{{docks}}</h4>
-            <div id=map>
-
-            </div>
+            <Map v-if="selectedStation" v-bind:selectedStation="selectedStation"></Map>
         </div>
     </div>
 </template>
 <script>
+    import Map from './Map.vue'
     export default {
         props:["stationArray"],
         data () {
@@ -24,8 +23,6 @@
                 bikes: 0,
                 docks: 0,
                 selectedStation: "",
-                lat: 0,
-                lon: 0,
             }
         },
         watch: {
@@ -48,19 +45,10 @@
                 this.bikes = stn["num_bikes_available"]
                 this.docks = stn["num_docks_available"]
             },
-            initMap(station) {
-                this.lat = station["lat"];
-                this.lon = station["lon"];
-                let location = {"lat": this.lat, "lng": this.lon};
-                let map = new google.maps.Map(document.getElementById('map'), {
-                  zoom: 15,
-                  center: location
-                });
-                let marker = new google.maps.Marker({
-                  position: location,
-                  map: map
-                });
-            }
+            // callUpdate(station) {
+            //     getDetail(station)
+            //     initMap(station)
+            // }
         },
         created () {
             this.fetchStatus()
