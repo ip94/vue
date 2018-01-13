@@ -14,9 +14,6 @@
         </div>
     </div>
 </template>
-<script async defer
-    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDUud00HNKREyWQuSQIA4DmyErrfd9DAzY&callback=initMap">
-</script>
 <script>
     export default {
         props:["stationArray"],
