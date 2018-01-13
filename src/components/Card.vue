@@ -16,6 +16,9 @@
     import Map from './Map.vue'
     export default {
         props:["stationArray"],
+        components: {
+        Map
+        },
         data () {
             return {
                 shortArray: [],
