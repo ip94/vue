@@ -1,29 +1,32 @@
 <template>
-<div class="container" id="app">
+<div id="app">
+  <div class="container"></div>
     <div class="jumbotron">
         <h1>Bike(whe)re<br><small>Can you get there?</small></h1>
         <h3>An app to help you navigate through the Toronto Bikeshare system where you need it, when you need it.</h3>
     </div>
-    <nav class="col-lg-12">
-      <nav-item class="nav-item nav-fill">
+    <ul class="nav nav-tabs">
+      <li class="nav-item nav-fill">
         <a class="nav-link" href="/intro.html">Introduction</a>
-      </nav-item>
-      <nav-item>
+      </li>
+      <li class="nav-item nav-fill">
         <a class="nav-link" href="/install2.html">Installation</a>
-      </nav-item>
-      <nav-item>
+      </li>
+      <li class="nav-item nav-fill">
         <a class="nav-link" href="/howto3.html">Tutorial</a>
-      </nav-item>
-      <nav-item active>
+      </li>
+      <li class="nav-item nav-fill">
         <a class="nav-link active" href="#">Bike(whe)re</a>
-      </nav-item>
-      <nav-item>
+      </li>
+      <li class="nav-item nav-fill">
         <a class="nav-link" href="/conclusion5.html">Conclusion</a>
-      </nav-item>
-      <nav-item>
+      </li>
+      <li class="nav-item nav-fill">
         <a class="nav-link" href="/reference6.html">References</a>
-      </nav-item>
-    </nav>
+      </li>
+    </ul>
+  </div>
+  <div class="container">
     <Station v-on:update="updateMessage"/>
     <div class="container center-block panel">
         <div class="text-left text-info col-lg-12 panel-heading">
@@ -32,6 +35,7 @@
             </h2>
         </div>
     </div>
+  </div>
 </div>
 </template>
 
