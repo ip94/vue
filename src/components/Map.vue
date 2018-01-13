@@ -13,7 +13,7 @@
         },
         methods: {
             initMap: function () {
-                if (selectedStation) {
+                if (this.selectedStation) {
                     this.lat = this.selectedStation["lat"];
                     this.lon = this.selectedStation["lon"];
                 }
