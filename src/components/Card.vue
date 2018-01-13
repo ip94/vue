@@ -49,9 +49,9 @@
                 this.docks = stn["num_docks_available"]
             },
             initMap(station) {
-                let lat = station["lat"];
-                let lon = station["lon"];
-                let location = {"lat": lat, "lng": lon};
+                this.lat = station["lat"];
+                this.lon = station["lon"];
+                let location = {"lat": this.lat, "lng": this.lon};
                 let map = new google.maps.Map(document.getElementById('map'), {
                   zoom: 15,
                   center: location
