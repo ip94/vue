@@ -1,6 +1,6 @@
 <template>
 <div id="app">
-  <div class="container"></div>
+  <div class="container">
     <div class="jumbotron">
         <h1>Bike(whe)re<br><small>Can you get there?</small></h1>
         <h3>An app to help you navigate through the Toronto Bikeshare system where you need it, when you need it.</h3>
