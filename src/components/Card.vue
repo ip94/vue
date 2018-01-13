@@ -8,7 +8,7 @@
         <div class="col-lg-offset-1" style="margin-top: 20px">
             <h4 class="panel-info"><strong>Bikes: </strong>{{bikes}}</h4>
             <h4 class="panel-info"><strong>Docks: </strong>{{docks}}</h4>
-            <Map v-if="selectedStation" v-bind:selectedStation="selectedStation"></Map>
+            <Map v-bind:selectedStation="selectedStation"></Map>
         </div>
     </div>
 </template>
