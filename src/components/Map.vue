@@ -9,11 +9,10 @@
             return {
                 lat: 0,
                 lon: 0,
-                }
             }
         },
         methods: {
-            window.initMap() = function () {
+            window.initMap: function () {
                 this.lat = this.selectedStation["lat"];
                 this.lon = this.selectedStation["lon"];
                 let location = {"lat": this.lat, "lng": this.lon};
