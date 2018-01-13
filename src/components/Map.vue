@@ -12,7 +12,7 @@
             }
         },
         methods: {
-            window.initMap: function () {
+            initMap: function () {
                 this.lat = this.selectedStation["lat"];
                 this.lon = this.selectedStation["lon"];
                 let location = {"lat": this.lat, "lng": this.lon};
