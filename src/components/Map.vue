@@ -33,9 +33,8 @@
                     this.lat = this.selectedStation["lat"];
                     this.lon = this.selectedStation["lon"];
                 }
-                let location = {'lat': this.lat, 'lng': this.lon};
-                this.center = location;
-                this.markers.position = location;
+                (this.center.lat, this.markers.position.lat) = this.lat;
+                (this.center.lng, this.markers.position.lng) = this.lon;
             }
         },
         updated () {
