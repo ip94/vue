@@ -26,14 +26,15 @@
             }
         },
         methods: {
+            loadMap() {
+                this.center = {lat: this.lat, lng: this.lon};
+                this.markers = [{
+                  position: {lat: this.lat, lng: this.lon}
+                }];                
+            },
             reloadMap () {
-                if (this.selectedStation) {
-                    console.log("HIIII");
-                    this.lat = this.selectedStation["lat"];
-                    this.lon = this.selectedStation["lon"];
-                    console.log(this.lat);
-                    console.log(this.log);
-                }
+                this.lat = this.selectedStation["lat"];
+                this.lon = this.selectedStation["lon"];
                 this.center = {lat: this.lat, lng: this.lon};
                 this.markers = [{
                   position: {lat: this.lat, lng: this.lon}
@@ -41,7 +42,7 @@
             }
         },
         created () {
-            this.reloadMap()
+            this.loadMap()
         },
         updated () {
             this.reloadMap()
