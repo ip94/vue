@@ -32,7 +32,7 @@
                 center: {'lat': lat, 'lng': lon},
                 markers: [{
                   position: {'lat': lat, 'lng': lon}
-                ]
+                }],
             }
         },
         methods: {
