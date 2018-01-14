@@ -63,7 +63,7 @@
             },
             loadMap (station) {
                 let location = {lat: station["lat"], lng: station["lon"]}
-                this.center = this.markers.position = location
+                this.center = this.markers[position] = location
             }
             // callUpdate(station) {
             //     getDetail(station)

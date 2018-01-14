@@ -55,8 +55,5 @@
         created () {
             this.fetchStationNames()
         },
-        components: {
-            Card
-        }
     }
 </script>
