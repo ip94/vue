@@ -1,20 +1,18 @@
 <template>
-    <div>
-        <gmap-map 
-        :center="center" 
-        :zoom="15" 
-        style="width: 500px; height: 300px"
-        >
-            <gmap-marker
-              :key="index"
-              v-for="(m, index) in markers"
-              :position="m.position"
-              :clickable="true"
-              :draggable="true"
-              @click="center=m.position">
-            </gmap-marker>
-      </gmap-map>
-    </div>
+    <gmap-map 
+    :center="center" 
+    :zoom="15" 
+    style="width: 500px; height: 300px"
+    >
+        <gmap-marker
+          :key="index"
+          v-for="(m, index) in markers"
+          :position="m.position"
+          :clickable="true"
+          :draggable="true"
+          @click="center=m.position">
+        </gmap-marker>
+  </gmap-map>
 </template>
 <script>
     Vue.use(VueGoogleMaps, {
@@ -36,7 +34,7 @@
             }
         },
         methods: {
-            initMap () {
+            reloadMap () {
                 if (this.selectedStation) {
                     this.lat = this.selectedStation["lat"];
                     this.lon = this.selectedStation["lon"];
@@ -47,7 +45,7 @@
             }
         },
         updated () {
-            this.initMap()
+            this.reloadMap()
         },
     }
 </script>
