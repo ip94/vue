@@ -21,10 +21,8 @@
             return {
                 lat: 43.6570321,
                 lon: -79.6010421,
-                center: {lat: this.lat, lng: this.lon},
-                markers: [{
-                  position: {lat: this.lat, lng: this.lon}
-                }],
+                center: {},
+                markers:[],
             }
         },
         methods: {
@@ -33,9 +31,14 @@
                     this.lat = this.selectedStation["lat"];
                     this.lon = this.selectedStation["lon"];
                 }
-                this.center.lat = this.markers.position.lat = this.lat;
-                this.center.lng = this.markers.position.lng = this.lon;
+                this.center = {lat: this.lat, lng: this.lon};
+                this.markers = [{
+                  position: {lat: this.lat, lng: this.lon}
+                }];
             }
+        },
+        created () {
+            this.reloadMap()
         },
         updated () {
             this.reloadMap()
