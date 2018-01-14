@@ -15,12 +15,6 @@
   </gmap-map>
 </template>
 <script>
-    Vue.use(VueGoogleMaps, {
-        load: {
-          key: 'AIzaSyAmwP9rGS2-Db9oSCgfHDIMEhvRDxXRR-Y',
-          v: '3.26',
-        }
-      });
     export default {
         props:["selectedStation"],
         data () {
