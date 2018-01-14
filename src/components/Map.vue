@@ -33,8 +33,8 @@
                     this.lat = this.selectedStation["lat"];
                     this.lon = this.selectedStation["lon"];
                 }
-                (this.center.lat, this.markers.position.lat) = this.lat;
-                (this.center.lng, this.markers.position.lng) = this.lon;
+                this.center.lat = this.markers.position.lat = this.lat;
+                this.center.lng = this.markers.position.lng = this.lon;
             }
         },
         updated () {
