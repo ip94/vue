@@ -28,8 +28,11 @@
         methods: {
             reloadMap () {
                 if (this.selectedStation) {
+                    console.log("HIIII");
                     this.lat = this.selectedStation["lat"];
                     this.lon = this.selectedStation["lon"];
+                    console.log(this.lat);
+                    console.log(this.log);
                 }
                 this.center = {lat: this.lat, lng: this.lon};
                 this.markers = [{
