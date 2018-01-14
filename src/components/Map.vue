@@ -21,9 +21,9 @@
             return {
                 lat: 43.6570321,
                 lon: -79.6010421,
-                center: {lat: this.lat, lng: this.lon},
+                center: {lat: 43.6570321, lng: -79.6010421},
                 markers: [{
-                  position: {lat: this.lat, lng: this.lon}
+                  position: {lat: 43.6570321, lng: -79.6010421}
                 }],
             }
         },
