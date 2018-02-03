@@ -6,7 +6,7 @@ body {
 .container, .container-fluid {
     background: rgba(255, 255, 255, 0.6);
 }
-.nav-light .navbar-nav .nav-link, a {
+.nav-light, .navbar-nav, .nav-link, a, .navbar-toggler, .navbar-toggler-icon, button {
     color: rgb(255, 255, 255) !important;
     font-size: 1em !important;
 }
