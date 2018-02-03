@@ -3,7 +3,7 @@ body {
     -webkit-font-smoothing: antialiased;
     background: url("./media/map.jpg") repeat-y;
 }
-#app {
+.container, .container-fluid {
     background: rgba(0, 0, 0, 0.3);
 }
 .nav {
@@ -40,7 +40,6 @@ h3 {
     height: 400px; background-color: grey;
 }
 
-@media (max-width: 991.98px) {
-}
+
 ? 00a954 light green
 ? 006747 dark green
