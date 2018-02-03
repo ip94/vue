@@ -3,7 +3,7 @@
   <div class="jumbotron">
     <h1>BikeWhere<br><small>Can you get there?</small></h1>
     <h3>An app to help you navigate through the Toronto Bikeshare system where you need it, when you need it.</h3>
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav class="navbar navbar-expand-lg navbar-dark">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks" aria-controls="navLinks" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
