@@ -4,10 +4,11 @@ body {
     background: url("./media/map.jpg") repeat-y;
 }
 .container, .container-fluid {
-    background: rgba(255, 255, 255, 0.3);
+    background: rgba(255, 255, 255, 0.6);
 }
-.nav {
-    font-size: 20px;
+a.link {
+    color: white;
+    font-size: 1em;
 }
 td {
     padding: 30px 10px 0px 10px
