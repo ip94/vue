@@ -1,11 +1,46 @@
-body {font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif; -webkit-font-smoothing: antialiased;}
-.nav {font-size: 20px;}
-td {padding: 30px 10px 0px 10px}
-.card {margin-top: 40px}
-.card-text {padding-left: 20px}
-.jumbotron, footer {background-color: #42b983; color: white}
-footer {margin-top: 100px}
-p, table, ul {font-size: 18px; display: block; margin-top: 1em; margin-bottom: 1em}
-img {margin-bottom: 40px}
-h3 {font-weight: bolder;}
-#map {height: 400px; background-color: grey;}
+body {
+    font-family: "Source Sans Pro", "Helvetica Neue", Arial, sans-serif; 
+    -webkit-font-smoothing: antialiased;
+    background: url("./media/map.jpg") repeat-y;
+}
+#app {
+    background: rgba(0, 0, 0, 0.3);
+}
+.nav {
+    font-size: 20px;
+}
+td {
+    padding: 30px 10px 0px 10px
+}
+.card {
+    margin-top: 40px
+}
+.card-text {
+    padding-left: 20px
+}
+.jumbotron, footer {
+    background-color: #006747; 
+    color: white}
+footer {
+    margin-top: 100px
+}
+p, table, ul {
+    font-size: 18px; 
+    display: block; 
+    margin-top: 1em; 
+    margin-bottom: 1em
+}
+img {
+    margin-bottom: 40px
+}
+h3 {
+    font-weight: bolder;
+}
+#map {
+    height: 400px; background-color: grey;
+}
+
+@media (max-width: 991.98px) {
+}
+? 00a954 light green
+? 006747 dark green
