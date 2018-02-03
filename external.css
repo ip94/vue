@@ -6,10 +6,9 @@ body {
 .container, .container-fluid {
     background: rgba(255, 255, 255, 0.6);
 }
-/*.navbar-dark, .navbar-nav, .nav-link, a, .navbar-toggler, .navbar-toggler-icon, button {
-    color: rgb(255, 255, 255) !important;
-    font-size: 1em !important;
-}*/
+.navbar-dark, .navbar-nav, .nav-link, a {
+    font-size: 2em !important;
+}
 td {
     padding: 30px 10px 0px 10px
 }
