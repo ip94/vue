@@ -1,6 +1,6 @@
 <template>
     <div>
-        <select class="input-lg col-lg-offset-1" v-model="selectedStation" @change="getDetail(selectedStation), loadMap(selectedStation)">
+        <select class="input-lg col-lg-offset-3" v-model="selectedStation" @change="getDetail(selectedStation), loadMap(selectedStation)">
             <option v-for="station in stationArray" v-bind:value="station">
                 {{station["address"]}}
             </option>
