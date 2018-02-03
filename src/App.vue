@@ -4,10 +4,10 @@
     <h1>BikeWhere<br><small>Can you get there?</small></h1>
     <h3>An app to help you navigate through the Toronto Bikeshare system where you need it, when you need it.</h3>
     <nav class="navbar navbar-expand-lg navbar-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navLinks" aria-controls="navLink" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="collapse navbar-collapse" id="navLinks">
         <div class="navbar-nav">
           <a class="nav-item nav-link" href="/intro.html">Introduction</a>
           <a class="nav-item nav-link" href="/install2.html">Installation</a>
@@ -19,26 +19,7 @@
       </div>
     </nav>
   </div>
-<!--   <ul class="nav nav-tabs">
-    <li class="nav-item nav-fill">
-      <a class="nav-link" href="/intro.html">Introduction</a>
-    </li>
-    <li class="nav-item nav-fill">
-      <a class="nav-link" href="/install2.html">Installation</a>
-    </li>
-    <li class="nav-item nav-fill">
-      <a class="nav-link" href="/howto3.html">Tutorial</a>
-    </li>
-    <li class="nav-item nav-fill">
-      <a class="nav-link active" href="#">BikeWhere</a>
-    </li>
-    <li class="nav-item nav-fill">
-      <a class="nav-link" href="/conclusion5.html">Conclusion</a>
-    </li>
-    <li class="nav-item nav-fill">
-      <a class="nav-link" href="/reference6.html">References</a>
-    </li>
-  </ul> -->
+
   <Station v-on:update="updateMessage"/>
   <div class="container center-block panel">
       <div class="text-left text-info col-lg-12 panel-heading">
