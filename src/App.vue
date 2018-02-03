@@ -8,7 +8,7 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navLinks">
-        <div class="navbar-nav" style="color: white; font-size: 1em;">
+        <div class="navbar-nav">
           <a class="nav-item nav-link" href="/intro.html">Introduction</a>
           <a class="nav-item nav-link" href="/install2.html">Installation</a>
           <a class="nav-item nav-link" href="/howto3.html">Tutorial</a>        
